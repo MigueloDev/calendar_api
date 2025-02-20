@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "4000:4000"
+
+# SAME Network as host
+networks:
+  default:
+    driver: bridge
