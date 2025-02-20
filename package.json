@@ -4,7 +4,7 @@
   "description": "Node.js y MongoDB en Docker con nodemon",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js",
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "build": "echo 'No build step needed for JavaScript'"
   },
